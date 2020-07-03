@@ -24,7 +24,7 @@ namespace Examen
         }
         public string InfoEquipo()
         {
-            return "Equipo: " + Nombre + " Medico: " + medico.Nombre + " Entrenador: " + entrenador.Nombre;
+            return "Equipo: " + Nombre + " Tipo de equipo: " + TipoEquipo +  "Medico: " + medico.Nombre + " Entrenador: " + entrenador.Nombre;
         }
 
         public Medico medico { get; set; }
@@ -61,10 +61,10 @@ namespace Examen
             Console.WriteLine("Ahora crearemos los jugadores");
             for (int a = 0; a < 13; ++a)
             {
-                Console.WriteLine("Cual ser el nombre del jugador " + Convert.ToString(a + 1));
+                Console.WriteLine("Cual será el nombre del jugador " + Convert.ToString(a + 1));
                 string nombreJugador = Console.ReadLine();
                 Console.WriteLine("");
-                Console.WriteLine("Cual ser la nacionalidad del juagdor " + Convert.ToString(a + 1));
+                Console.WriteLine("Cual será la nacionalidad del jugador " + Convert.ToString(a + 1));
                 string nacionalidad = Console.ReadLine();
                 Console.WriteLine("");
                 Jugador jugador = new Jugador(nombreJugador, nacionalidad, "Jugador de cancha");
@@ -72,6 +72,8 @@ namespace Examen
             }
             Equipo equipo = new Equipo(nombreEquipo, "Liga", Jugadores, medico, entrenador);
             Equipos.Add(equipo);
+            
+            
         }
 
         public void CrearEquipoNacional()
@@ -110,6 +112,7 @@ namespace Examen
             }
             Equipo equipo = new Equipo(nombreEquipo, "Nacional", Jugadores, medico, entrenador);
             Equipos.Add(equipo);
+            
         }
 
         public void VerEquipos()
