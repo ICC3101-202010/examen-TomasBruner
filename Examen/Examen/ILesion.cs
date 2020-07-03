@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExamenFinal
+namespace Examen
 {
-    public interface ILesion
+    interface ILesion
     {
         void Lesion();
     }

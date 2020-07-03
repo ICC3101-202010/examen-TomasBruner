@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6AC65DC7-AC1B-4663-AC7A-BCF259D0EC56}</ProjectGuid>
+    <ProjectGuid>{D5084DD3-5C6C-4A56-BA01-7ADB0497CB09}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ExamenFinal</RootNamespace>
-    <AssemblyName>ExamenFinal</AssemblyName>
+    <RootNamespace>Examen</RootNamespace>
+    <AssemblyName>Examen</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entrenador.cs" />
+    <Compile Include="Equipo.cs" />
+    <Compile Include="ILesion.cs" />
+    <Compile Include="Jugador.cs" />
+    <Compile Include="Medico.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

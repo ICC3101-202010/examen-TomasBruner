@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExamenFinal
+namespace Examen
 {
-    public class Equipo
+    class Equipo
     {
         List<Jugador> jugadores = new List<Jugador>();
         List<Equipo> equipos = new List<Equipo>();
@@ -47,7 +46,7 @@ namespace ExamenFinal
             Entrenador entrenador = new Entrenador(nombreEntrenador);
             Console.WriteLine("Ahora crearemos los jugadores, empezando por los 2 arqueros");
             int i = 0;
-            while(i < 2)
+            while (i < 2)
             {
                 Console.WriteLine("Cual será el nombre del arquero " + Convert.ToString(i + 1));
                 string nombreArquero = Console.ReadLine();
@@ -128,7 +127,7 @@ namespace ExamenFinal
         {
             Console.WriteLine("¿De que equipo o pais quieres ver los jugadores? (Escribir el numero del equipo igual como en la lista)");
             int opcion = Convert.ToInt32(Console.ReadLine());
-            foreach(Jugador jugador in Equipos[opcion - 1].Jugadores)
+            foreach (Jugador jugador in Equipos[opcion - 1].Jugadores)
             {
                 Console.WriteLine(jugador.InfoJugador());
             }

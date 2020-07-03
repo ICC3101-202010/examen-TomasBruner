@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExamenFinal
+namespace Examen
 {
     class Program
     {
@@ -35,7 +35,7 @@ namespace ExamenFinal
                     }
                 }
                 if (opcion == 2)
-                { 
+                {
                     Console.WriteLine("Aqui están los equipos");
                     Console.WriteLine("");
                     equipo.VerEquipos();

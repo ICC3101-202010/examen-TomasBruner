@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExamenFinal
+namespace Examen
 {
-    public class Jugador : Person, ILesion
+    public class Jugador : Person
     {
         public Jugador(string nombre, string nacionalidad, string tipoJugador)
         {
@@ -28,6 +28,5 @@ namespace ExamenFinal
         {
             return "Nombre: " + Nombre + " Nacionalidad: " + Nacionalidad + " Tipo De Jugador: " + TipoJugador;
         }
-        
     }
 }
